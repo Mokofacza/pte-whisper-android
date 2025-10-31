@@ -1,15 +1,20 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+﻿# --- Android / Gradle ---
+.gradle/
+**/build/
 local.properties
+.cxx/
+.externalNativeBuild/
+captures/
+*.iml
+.idea/
+.DS_Store
+
+# --- ExecuTorch / modele w assets ---
+app/src/main/assets/**/xnnpack/**
+app/src/main/assets/**/*.pte
+app/src/main/assets/**/*.pt
+app/src/main/assets/**/*.onnx
+app/src/main/assets/**/*.bin
+
+# (opcjonalnie) duże próbki audio
+# app/src/main/assets/**/*.wav
